@@ -1,4 +1,4 @@
-import { Network, Database, Globe, Cloud } from 'lucide-react';
+import { Server, Network, Database, Globe, Cloud } from 'lucide-react';
 import styles from './AwsProjects.module.css';
 
 const AwsProjects = () => {
