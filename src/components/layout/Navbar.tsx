@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className={`container ${styles.navContainer}`}>
         <a href="#" className={styles.logo}>
           <Cloud size={24} color="var(--accent-primary)" />
-          Kavinesh<span>.</span>
+          Kavinesh<span>S R</span>
         </a>
 
         <ul className={styles.navLinks}>
@@ -42,7 +42,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button 
+        <button
           className={styles.mobileMenuBtn}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
