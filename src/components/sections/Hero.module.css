@@ -1,0 +1,103 @@
+.hero {
+  min-height: 110vh; /* Larger hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  color: var(--accent-purple);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.title {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.socialLink {
+  color: var(--text-muted);
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.socialLink:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.3);
+}
+
+.particlesCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
